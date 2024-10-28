@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/output.css">
+
+</head>
+<body>   
+    <section class="flex justify-around ... w-7/10 mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-16"">
+        <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-16">
+            <div class="px-4 py-2">
+                <h1 class="text-gray-800 font-bold text-2xl uppercase">To-Do List</h1>
+            </div>
+            <form class="w-full max-w-sm mx-auto px-6 py-2">
+                <div class="flex items-center border-b-2 border-teal-500 py-2">
+                    <input
+                        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                        type="text" placeholder="Add a task">
+                    <button
+                        class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                        type="button">
+                        Add
+                    </button>
+                </div>
+            </form>
+            <ul class="bg-white shadow overflow-hidden sm:rounded-md max-w-sm mx-auto mt-16">
+                <li>
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 1</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 1</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-green-600">Active</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-t border-gray-200">
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 2</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 2</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-red-600">Inactive</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-t border-gray-200">
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 3</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 3</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-yellow-600">Pending</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-16">
+            <div class="px-4 py-2">
+                <h1 class="text-gray-800 font-bold text-2xl uppercase">In progress</h1>
+            </div>
+            <form class="w-full max-w-sm mx-auto px-4 py-2">
+                <div class="flex items-center border-b-2 border-teal-500 py-2">
+                    <input
+                        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                        type="text" placeholder="Add a task">
+                    <button
+                        class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                        type="button">
+                        Add
+                    </button>
+                </div>
+            </form>
+            <ul class="bg-white shadow overflow-hidden sm:rounded-md max-w-sm mx-auto mt-16">
+                <li>
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 1</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 1</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-green-600">Active</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-t border-gray-200">
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 2</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 2</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-red-600">Inactive</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-t border-gray-200">
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 3</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 3</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-yellow-600">Pending</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-16">
+            <div class="px-4 py-2">
+                <h1 class="text-gray-800 font-bold text-2xl uppercase">Done</h1>
+            </div>
+            <form class="w-full max-w-sm mx-auto px-4 py-2">
+                <div class="flex items-center border-b-2 border-teal-500 py-2">
+                    <input
+                        class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+                        type="text" placeholder="Add a task">
+                    <button
+                        class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+                        type="button">
+                        Add
+                    </button>
+                </div>
+            </form>
+            <ul class="bg-white shadow overflow-hidden sm:rounded-md max-w-sm mx-auto mt-16">
+                <li>
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 1</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 1</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-green-600">Active</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-t border-gray-200">
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 2</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 2</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-red-600">Inactive</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="border-t border-gray-200">
+                    <div class="px-4 py-5 sm:px-6">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Item 3</h3>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Description for Item 3</p>
+                        </div>
+                        <div class="mt-4 flex items-center justify-between">
+                            <p class="text-sm font-medium text-gray-500">Status: <span class="text-yellow-600">Pending</span></p>
+                            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Edit</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+</body>
+</html>
+
