@@ -1,20 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une Tâche</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <button id="openPopupBtn" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Ajouter une Tâche</button>
+
+    <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div class="bg-white rounded-lg p-6 w-96">
+            <span id="closePopupBtn" class="float-right cursor-pointer text-gray-500 text-xl">&times;</span>
+            <h2 class="text-lg font-bold mb-4">Ajouter une Tâche</h2>
+            <input type="text" id="taskTitleInput" class="border border-gray-300 rounded w-full p-2 mb-4" placeholder="Titre de la tâche">
+            
+            <textarea id="taskDescriptionInput" class="border border-gray-300 rounded w-full p-2 mb-4" rows="3" placeholder="Description"></textarea>
+            
+            <select id="taskPriorityInput" class="border border-gray-300 rounded w-full p-2 mb-4">
+                <option value="">Priorité</option>
+                <option value="haute">Haute</option>
+                <option value="moyenne">Moyenne</option>
+                <option value="basse">Basse</option>
+            </select>
+
+            <input type="date" id="taskDateInput" class="border border-gray-300 rounded w-full p-2 mb-4">
+
+            <button id="addTaskBtn" class="w-full bg-blue-500 text-white rounded hover:bg-blue-600 py-2">Ajouter</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-
 <body class="bg-gray-100">
 
     <div class="container mx-auto">
         <h1 class="text-2xl font-bold text-center mt-8">To Do List</h1>
         <div class="flex justify-center mt-6">
-            <button id="openPopupBtn" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Ajouter une
-                Tâche</button>
+            <button id="openPopupBtn" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Ajouter une Tâche</button>
         </div>
 
         <div class="flex justify-around mt-6">
@@ -34,19 +68,17 @@
             </div>
         </div>
 
-
+        
     </div>
 
     <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
         <div class="bg-white rounded-lg p-6 w-96">
             <span id="closeBtn" class="float-right cursor-pointer text-gray-500 text-xl">&times;</span>
             <h2 class="text-lg font-bold mb-4">Ajouter une Tâche</h2>
-            <input type="text" id="TitleInput" class="border border-gray-300 rounded w-full p-2 mb-4"
-                placeholder="Titre de la tâche">
-
-            <textarea id="descriptionInput" class="border border-gray-300 rounded w-full p-2 mb-4" rows="3"
-                placeholder="Description"></textarea>
-
+            <input type="text" id="TitleInput" class="border border-gray-300 rounded w-full p-2 mb-4" placeholder="Titre de la tâche">
+            
+            <textarea id="descriptionInput" class="border border-gray-300 rounded w-full p-2 mb-4 " rows="3" placeholder="Description"></textarea>
+            
             <select id="PriorityInput" class="border border-gray-300 rounded w-full p-2 mb-4">
                 <option value="">Priorité</option>
                 <option value="P1">P1</option>
@@ -55,13 +87,17 @@
             </select>
 
             <input type="date" id="DateInput" class="border border-gray-300 rounded w-full p-2 mb-4">
+        <select id="taskStatusInput" class="border border-gray-300 rounded w-full p-2 mb-4" required>
+            <option value="">État</option>
+            <option value="todo">todo</option>
+            <option value="doing">doing</option>
+            <option value="done">done</option>
+        </select>
 
-            <button id="addTaskBtn"
-                class="w-full bg-blue-500 text-white rounded hover:bg-blue-600 py-2">Ajouter</button>
+            <button id="addTaskBtn" class="w-full bg-blue-500 text-white rounded hover:bg-blue-600 py-2">Ajouter</button>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
