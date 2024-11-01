@@ -56,8 +56,6 @@ document.getElementById('addTaskBtn').onclick = function () {
 
         }
         
-
-
         document.getElementById('TitleInput').value = '';
         document.getElementById('descriptionInput').value = '';
         document.getElementById('PriorityInput').value = '';
