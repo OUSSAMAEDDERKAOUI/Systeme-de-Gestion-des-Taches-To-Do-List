@@ -54,8 +54,14 @@ document.getElementById('addTaskBtn').onclick = function () {
         else {
             document.getElementById('doneList').appendChild(taskItem);
 
-        }
         
+        // afficher la discription  
+
+        taskItem.querySelector('.aficherDesc').onclick = function () {
+            const descElement = taskItem.querySelector('.desc');
+            descElement.classList.toggle('hidden');
+        };
+
 
         document.getElementById('TitleInput').value = '';
         document.getElementById('descriptionInput').value = '';
