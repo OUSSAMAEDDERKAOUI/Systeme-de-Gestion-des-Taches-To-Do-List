@@ -54,7 +54,19 @@ document.getElementById('addTaskBtn').onclick = function () {
         else {
             document.getElementById('doneList').appendChild(taskItem);
 
-        
+        }
+        // Ajouter la couleur pour chaque priority 
+        if (priority === 'P1') {
+            taskItem.style.borderLeft = '4px double red';
+
+        }
+        else if (priority === 'P2') {
+            taskItem.style.borderLeft = '4px double orange';
+        }
+        else {
+            taskItem.style.borderLeft = '4px double green';
+
+        }
         // afficher la discription  
 
         taskItem.querySelector('.aficherDesc').onclick = function () {
