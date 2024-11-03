@@ -36,7 +36,6 @@ document.getElementById('addTaskBtn').onclick = function (event) {
         } 
     const taskStatus = document.getElementById("taskStatusInput").value;
 
-
     if (title && description && priority && dueDate && taskStatus) {
         const taskItem = {
             title,
