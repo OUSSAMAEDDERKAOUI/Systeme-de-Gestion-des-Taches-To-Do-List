@@ -1,6 +1,6 @@
 .animate-added-card {
     transform: scale(1);
-    max-height: 150px;
+    /* max-height: 150px; */
     animation: addTask .5s .3s ease-in-out backwards;
 }
 
