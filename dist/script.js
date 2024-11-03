@@ -152,8 +152,6 @@ document.getElementById('addTaskBtn').onclick = function (event) {
                 newDescription.innerHTML = `${descriptionElement}`;
                 newPriority.innerHTML = `${priorityElement}`;
                 newDate.innerHTML = `${dateElement}`;
-                
-        
                 count();
                 if (StatusElement === 'todo') {
                     tasks.todo.push(taskItem);
