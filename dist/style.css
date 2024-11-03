@@ -45,3 +45,7 @@
         transform: scale(0);
     }
 }
+
+.custom-height {
+    height: 28rem; 
+}
