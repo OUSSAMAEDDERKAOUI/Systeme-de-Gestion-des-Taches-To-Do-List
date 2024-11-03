@@ -85,14 +85,14 @@ document.getElementById('addTaskBtn').onclick = function (event) {
         }
         // colorer les taskElements selan leur priorite
         if (priority === 'P1') {
-            taskElement.style.borderLeft = '4px double red';
+            taskElement.style.borderLeft = '4px solid red';
 
         }
         if (priority === 'P2') {
-            taskElement.style.borderLeft = '4px double orange';
+            taskElement.style.borderLeft = '4px solid orange';
 
         } if (priority === 'P3') {
-            taskElement.style.borderLeft = '4px double green';
+            taskElement.style.borderLeft = '4px solid green';
 
         }
         count();
@@ -198,5 +198,34 @@ function count() {
 
     document.getElementById('donecount').textContent = document.getElementById('doneList').childElementCount;
 
-
+}
+// document.querySelectorAll('.clearData').forEach(deletButton => {
+//     deletButton.onclick=function(){
+//         const confirmDelete = confirm("Voulez-vous vraiment supprimer tous les taches ?");
+//         if (confirmDelete) {
+//             this.parentElement.parentElement.nextElementSibling.innerHTML=''
+//             count();
+//         }
+//     }
+// });
+document.querySelector(".clearDataTodo").onclick=function{
+    const confirmDelete = confirm("Voulez-vous vraiment supprimer tous les taches ?");
+    if (confirmDelete) {
+        this.parentElement.parentElement.nextElementSibling.innerHTML=''
+        count();
+    }
+}
+document.querySelector(".clearDataDoing").onclick=function{
+    const confirmDelete = confirm("Voulez-vous vraiment supprimer tous les taches ?");
+    if (confirmDelete) {
+        this.parentElement.parentElement.nextElementSibling.innerHTML=''
+        count();
+    }
+}
+document.querySelector(".clearDataDone").onclick=function{
+    const confirmDelete = confirm("Voulez-vous vraiment supprimer tous les taches ?");
+    if (confirmDelete) {
+        this.parentElement.parentElement.nextElementSibling.innerHTML=''
+        count();
+    }
 }
