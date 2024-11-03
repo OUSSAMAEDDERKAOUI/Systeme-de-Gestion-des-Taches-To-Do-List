@@ -20,6 +20,12 @@ window.onclick = function (event) {
         popup.classList.add('hidden');
     }
 };
+function clearInputs(TitleInput,descriptionInput,PriorityInput,DateInput) {
+        document.getElementById('TitleInput').value = '';
+        document.getElementById('descriptionInput').value = '';
+        document.getElementById('PriorityInput').value = '';
+         document.getElementById('DateInput').value = '';
+}
 //creation de variable pour stocke les input de form popup
 document.getElementById('addTaskBtn').onclick = function (event) {
     const title = document.getElementById("TitleInput").value;
@@ -90,12 +96,20 @@ document.getElementById('addTaskBtn').onclick = function (event) {
 
         }
         count();
+
+
         // la fonction de suppression 
         taskElement.querySelector('.deleteBtn').onclick = function (e) {
             e.stopPropagation();
             const confirmDelete = confirm("Voulez-vous vraiment supprimer cette tache ?");
             if (confirmDelete) {
                 taskElement.remove();
+                tasks[taskStatus] = tasks[taskStatus].filter(task => task.title !== taskItem.title);
+                console.log(tasks.todo);
+                console.log(tasks.doing);
+
+                console.log(tasks.done);
+
                 count();
             }
 
@@ -159,14 +173,13 @@ document.getElementById('addTaskBtn').onclick = function (event) {
 
                 }
                 document.getElementById('popupEdit').classList.add('hidden');
-
-
             }
             // fermer la popup
             document.getElementById('closeBtnEdit').onclick = function () {
                 document.getElementById('popupEdit').classList.add('hidden');
             };
         }
+        clearInputs(TitleInput,descriptionInput,PriorityInput, DateInput);
     }
     else {
         alert('Veuillez remplir tous les champs.');
