@@ -103,13 +103,19 @@ document.getElementById('addTaskBtn').onclick = function (event) {
             e.stopPropagation();
             const confirmDelete = confirm("Voulez-vous vraiment supprimer cette tache ?");
             if (confirmDelete) {
-                taskElement.remove();
                 tasks[taskStatus] = tasks[taskStatus].filter(task => task.title !== taskItem.title);
-                console.log(tasks.todo);
-                console.log(tasks.doing);
+                taskElement.classList.add("animate-deleted-card");
+                setTimeout(() => {
+                    taskElement.remove();
+                }, 750);
 
-                console.log(tasks.done);
 
+
+
+                // console.log(tasks.todo);
+                // console.log(tasks.doing);
+
+                // console.log(tasks.done);
                 count();
             }
 
