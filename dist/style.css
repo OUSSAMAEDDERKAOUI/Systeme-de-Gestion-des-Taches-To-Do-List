@@ -1,0 +1,45 @@
+.animate-added-card {
+    transform: scale(1);
+    max-height: 150px;
+    animation: addTask .5s .3s ease-in-out backwards;
+}
+
+@keyframes addTask {
+    0% {
+        max-height: 0;
+        transform: scale(0);
+        margin: 0;
+        padding: 0;
+
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+        max-height: 130px;
+    }
+}
+.animate-deleted-card {
+    transform: scale(0);
+    max-height: 0;
+    padding: 0 ;
+    margin: 0;
+    animation: deleteTask .5s .3s ease-in-out backwards;
+}
+
+@keyframes deleteTask {
+    0% {
+        transform: scale(1);
+        max-height: 130px;
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        max-height: 0;
+        transform: scale(0);
+        margin: 0;
+        padding: 0;
+    }
+}

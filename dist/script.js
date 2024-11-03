@@ -21,11 +21,19 @@ window.onclick = function (event) {
     }
 };
 //creation de variable pour stocke les input de form popup
-document.getElementById('addTaskBtn').onclick = function () {
+document.getElementById('addTaskBtn').onclick = function (event) {
     const title = document.getElementById("TitleInput").value;
     const description = document.getElementById("descriptionInput").value;
     const priority = document.getElementById("PriorityInput").value;
     const dueDate = document.getElementById("DateInput").value;
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const dueDateInput = new Date(dueDate);
+            if (dueDateInput < today) {
+            alert("La date d'échéance ne peut pas être dans le passé !");
+            // event.preventDefault(); 
+            return;
+        } 
     const taskStatus = document.getElementById("taskStatusInput").value;
 
 
@@ -39,7 +47,7 @@ document.getElementById('addTaskBtn').onclick = function () {
         };
         // creation de div pour stocke en div de  (todo ou doing ou done )
         const taskElement = document.createElement('div');
-        taskElement.classList.add('border', 'border-gray-300', 'rounded', 'p-2', 'mb-2', 'bg-gray-50');
+        taskElement.classList.add( 'animate-added-card','border', 'border-gray-300', 'rounded', 'p-2', 'mb-2', 'bg-gray-50');
         taskElement.innerHTML = `
         <h1 > <span class=" font-extrabold">Title :</span> ${taskItem.title}</h1>
         <div class=" desc-Toggel hidden"> <span class="font-bold">description :</span>${taskItem.description}</div>
